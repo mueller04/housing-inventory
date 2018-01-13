@@ -15,7 +15,7 @@ public class Transaction {
         if (customer.balance >= propertyToPurchase.price) {
             completePropertyPurchase(propertyToPurchase, availableProperties, customer);
 
-            transactionLogger.log(TransactionType.BOUGHT, customer, propertyToPurchase);
+            transactionLogger.log(TransactionType.PURCHASE, customer, propertyToPurchase);
 
         } else {
             System.out.println("Your balance is insufficient");

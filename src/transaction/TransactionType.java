@@ -1,6 +1,6 @@
 package transaction;
 
 public enum TransactionType {
-    BOUGHT,
+    PURCHASE,
     SOLD
 }

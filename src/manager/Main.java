@@ -14,7 +14,10 @@ public class Main {
 
         PropertySelector selector = new PropertySelector(transaction);
 
-        Customer customer = Customer.buildCustomer(selector);
+        Auth auth = new Auth(selector);
+
+        Customer customer = auth.login();
+
         List<Property> availableProperties = getProperties();
 
         boolean quit = false;
